@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fucky password generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="centered-box">
+        <div class="slidery-boxy-thingy">
+            <div class="slidecontainer form-item">
+                <label for="passwordLength">Password Length: <span id="passwordLengthOutput"></span></label>
+                <input type="range" min="1" max="100" value="50" class="slider" id="passwordLength">
+            </div>
+            <label class="switch form-item">
+                <input type="checkbox" id="default" checked>
+                <span class="switch-slider round"></span>
+                <label for="default">a-z</label>
+            </label>
+            <label class="switch form-item">
+                <input type="checkbox" id="capitalized" checked>
+                <span class="switch-slider round"></span>
+                <label for="capitalized">A-Z</label>
+            </label>
+            <label class="switch form-item">
+                <input type="checkbox" id="numbers" checked>
+                <span class="switch-slider round"></span>
+                <label for="numbers">0-9</label>
+            </label>
+            <label class="switch form-item">
+                <input type="checkbox" id="normal-symbols" checked>
+                <span class="switch-slider round"></span>
+                <label for="normal-symbols">Normal symbols - !@#$%^&*?</label>
+            </label>
+            <label class="switch form-item">
+                <input type="checkbox" id="fuckier-symbols">
+                <span class="switch-slider round"></span>
+                <label for="fuckier-symbols">Fuckier symbols - ()[]=-+_-><~`:</label>
+            </label>
+            <label class="switch form-item">
+                <input type="checkbox" id="fuckiest-symbols">
+                <span class="switch-slider round"></span>
+                <label for="fuckiest-symbols">Fuckiest symbols - \,.;"{}|/'</label>
+            </label>
+            <button id="regenerate" class='button centered-element' type="button"><img src="assets/images/button.png" height="40px"/></button>
+        </div>
+        <div class="password-showy-box">
+            <input type="text" readonly class="password-gen-box" placeholder="THIS IS WHERE MY PASSWORD WOULD BE. (IF I HAD ONE).">
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</html>
