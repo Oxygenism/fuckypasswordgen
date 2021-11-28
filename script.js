@@ -18,7 +18,7 @@ let enabledItems = {
 $(document).ready(function () {
     let slider = document.getElementById("passwordLength");
     let output = document.getElementById("passwordLengthOutput");
-    passwordLength = slider.value;
+    slider.value = passwordLength;
     output.innerHTML = passwordLength;
 
     slider.oninput = function() {
